@@ -7,6 +7,7 @@ import {
   Show,
   UserButton,
 } from "@clerk/nextjs";
+import { SyncUser } from "@/components/SyncUser";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ClerkProvider>
+          <SyncUser />
           <header className="flex justify-end gap-4 p-4">
             <Show when="signed-out">
               <SignInButton />
