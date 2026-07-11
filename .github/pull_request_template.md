@@ -24,10 +24,6 @@
   surface area, etc.
 -->
 
-### Pros
-
-### Cons
-
 ## Testing
 
 <!-- Describe how to test the changes. Verify there are no regressions. -->
