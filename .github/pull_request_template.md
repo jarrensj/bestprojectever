@@ -1,6 +1,6 @@
 ## Description
 
-<!-- Provide a brief description of the changes in this PR -->
+<!-- Provide a brief description of the changes in this PR, could even have a Motivation section -->
 
 ## Pros and Cons
 
