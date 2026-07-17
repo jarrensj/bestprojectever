@@ -12,6 +12,14 @@ Never commit personal information — email addresses, phone numbers, wallet add
 - If personal information is needed for the app to run, it belongs only in local/untracked env files (`.env`, `.env.local`) or the deployment platform's environment variables.
 - Before committing, scan the diff for anything matching an email, phone number, or wallet address and remove it first.
 
+# Keep Terms of Service & Privacy Policy in sync
+
+When a new feature changes what the app collects, stores, shares, or lets users do — e.g. new
+personal data collected, third-party services or analytics added, payments, user-generated content,
+cookies/tracking — update the Terms of Service and Privacy Policy to reflect it in the same PR. If
+those pages don't exist in the repo yet or live elsewhere, flag the needed update in the PR's
+Deployment Notes instead of silently shipping the feature.
+
 # Commit & PR guidelines
 
 - **One feature per PR — no coupling.** Each feature reviews, merges, and reverts independently. A
