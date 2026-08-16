@@ -8,10 +8,10 @@
   REQUIRED for refactor / perf / cleanup PRs (anything where the
   observable behavior is unchanged but the implementation moves).
   
-  Refactor PRs aren't free even when behavior doesn't change — they
-  add review burden, can introduce subtle regressions, and have
-  opportunity cost. Spelling out the tradeoffs up front lets the
-  reviewer agree (or push back) on the call you already made.
+  Refactor PRs aren't always free even when behavior doesn't change — they
+  can introduce subtle regressions, and have
+  opportunity cost somewhere. Spelling out the tradeoffs up front lets the
+  reviewer agree (or push back) on the call you are making.
 
   Skip the section entirely if this PR is a trivial change (typo,
   docs, dependency bump) where there's nothing meaningful to weigh.
@@ -20,8 +20,7 @@
   N redundant calls eliminated, one fewer click, improved dev experience, ux, etc.) 
 
   **Cons** — what this PR costs. New deps, edge cases now possible
-  that weren't before, regressions in non-default flows, increased
-  surface area, etc.
+  that weren't before, regressions in non-default flows, etc.
 -->
 
 ## Testing
