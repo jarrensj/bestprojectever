@@ -24,6 +24,9 @@ Deployment Notes instead of silently shipping the feature.
 
 - **One feature per PR — no coupling.** Each feature reviews, merges, and reverts independently. A
   change spanning two features is two PRs.
+- **Follow-ups live in the code as `TODO` comments.** If a PR description notes a follow-up that is
+  required or recommended (but out of scope for this PR), also leave a `TODO:` comment at the relevant
+  spot in the code describing it, so it isn't forgotten while the PR stays one feature.
 - **Each PR is complete, not half-plumbing** — its migration *and* the code/API/UI that uses it *and* a
   working path. No dead schema.
 - **Migrations created incrementally — only what the current PR needs.** Never scaffold a phase's
