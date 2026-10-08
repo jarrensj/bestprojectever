@@ -8,7 +8,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 Never commit personal information — email addresses, phone numbers, wallet addresses, or similar PII — anywhere: not in tracked files, commit messages, or PR titles/descriptions.
 
-- When creating or updating `.env.example`, omit any variable whose value is personal information (e.g. `ADMIN_EMAIL`, `SUPPORT_PHONE`, `WALLET_ADDRESS`) entirely — do not include it with a placeholder, and never copy real values from `.env`.
+- When creating or updating `.env.example`, omit any variable whose value is personal information (e.g. `NEXT_PUBLIC_SUPPORT_EMAIL`, `NEXT_PUBLIC_CONTRACT_ADDRESS`, `WEBHOOK_SECRET`) entirely — do not include it with a placeholder, and never copy real values from `.env`.
 - If personal information is needed for the app to run, it belongs only in local/untracked env files (`.env`, `.env.local`) or the deployment platform's environment variables.
 - Before committing, scan the diff for anything matching an email, phone number, or wallet address and remove it first.
 
@@ -36,7 +36,6 @@ Deployment Notes instead of silently shipping the feature.
 - **Fill the PR template's Deployment Notes** — migration/env needed? migration run? (`supabase db
   push` as part of merging).
 - **Keep PRs reviewable** — small enough to read in one sitting.
-- **Plain commit messages — no AI-attribution trailers.** Subject + body only. Never append
-  `Co-Authored-By: Claude …` (or any AI/assistant attribution) to a commit.
+- **Plain commit messages — no AI-attribution trailers.** Subject + body only. Never append any AI/assistant attribution) to a commit.
 - **Graduate to review, don't merge** — open each PR for review (`gh pr ready`) and stack dependents on
   its branch
