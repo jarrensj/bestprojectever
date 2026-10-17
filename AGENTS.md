@@ -8,7 +8,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 Never commit personal information — email addresses, phone numbers, wallet addresses, or similar PII — anywhere: not in tracked files, commit messages, or PR titles/descriptions.
 
-- When creating or updating `.env.example`, omit any variable whose value is personal information (e.g. `NEXT_PUBLIC_SUPPORT_EMAIL`, `WEBHOOK_SECRET`) entirely — do not include it with a placeholder, and never copy real values from `.env`. Just leave the placeholder value empty in the .env.example. 
+- When creating or updating `.env.example`, omit any value of a variable whose value is personal information (e.g. `NEXT_PUBLIC_SUPPORT_EMAIL`, `WEBHOOK_SECRET`) entirely — do not include it with a placeholder, and never copy real values from `.env`. Just leave the placeholder value empty in the .env.example. 
 - If personal information is needed for the app to run, it belongs only in local/untracked env files (`.env`, `.env.local`) or the deployment platform's environment variables.
 - Before committing, scan the diff for anything matching an email, phone number, or wallet address and remove it first.
 
